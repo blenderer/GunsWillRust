@@ -3,12 +3,12 @@ var game = new Phaser.Game(800, 600, Phaser.CANVAS, 'phaser-example', { create: 
 
 function create() {
 
-	var height = 30;
-	var width = 30;
+	var height = 15;
+	var width = 15;
 
     ROT.RNG.setSeed(1234);
 	map = new ROT.Map.Digger(width, height);
-	var display = new ROT.Display({fontSize:8});
+	display = new ROT.Display({fontSize:8});
 	map.create(display.DEBUG);
 
 	//prep our 2d array
